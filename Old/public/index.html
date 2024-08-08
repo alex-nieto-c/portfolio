@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="Description" content="Michael Gordon" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta property="title" content="Michael Gordon" />
+    <meta
+      property="description"
+      content="Michael Gordon's digital portfolio | Michael Gordon - Remote Developer | Specialize in front development using React, Redux, CSS Frameworks and other front-end libraries"
+    />
+
+    <meta property="og:url" content="https://miclegoden.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="%PUBLIC_URL%/favicon.ico" />
+    <meta property="og:title" content="Michael Gordon" />
+    <meta
+      property="og:description"
+      content="Michael Gordon's digital portfolio | Michael Gordon - Remote Developer | Specialize in front development using React, Redux, CSS Frameworks and other front-end libraries"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta content="https://miclegoden.vercel.app/" name="twitter:site" />
+    <meta content="Michael Gordon" name="twitter:title" />
+    <meta content="%PUBLIC_URL%/favicon.ico" name="twitter:image" />
+    <meta
+      property="twitter:description"
+      content="Michael Gordon's digital portfolio | Michael Gordon - Remote Developer | Specialize in front development using React, Redux, CSS Frameworks and other front-end libraries"
+      name="twitter:description"
+    />
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Michael Gordon</title>
+  </head>
+  <body>
+    <heading />
+    <noscript
+      >Michael Gordon's digital portfolio | Michael Gordon - Remote Developer |
+      Specialize in front development using React, Redux, CSS Frameworks and
+      other front-end libraries.</noscript
+    >
+    <main>
+      <div id="root"></div>
+    </main>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker
+            .register("worker.js")
+            .then(
+              function (registration) {
+                console.log(
+                  "Worker registration successful",
+                  registration.scope
+                );
+              },
+              function (err) {
+                console.log("Worker registration failed", err);
+              }
+            )
+            .catch(function (err) {
+              console.log(err);
+            });
+        });
+      } else {
+        console.log("Service Worker is not supported by browser.");
+      }
+    </script>
+  </body>
+</html>
